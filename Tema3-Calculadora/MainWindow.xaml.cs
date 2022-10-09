@@ -27,7 +27,8 @@ namespace Tema3_Calculadora
 
         private void ClickButton(object sender, RoutedEventArgs e)
         {
-
+            Button boton = (Button)sender;
+            MostrarNumerosTextBlock.Text += boton.Tag.ToString();
         }
     }
 }
