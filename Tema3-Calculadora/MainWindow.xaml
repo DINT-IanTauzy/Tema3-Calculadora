@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tema3_Calculadora"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="400" MinHeight="350" MinWidth="250">
+        Title="Calculadora" Height="400" Width="400" MinHeight="350" MinWidth="250" Icon="./Recursos/Calculadora.ico">
     <Grid ShowGridLines="False">
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
@@ -21,8 +21,8 @@
         </Grid.ColumnDefinitions>
         
         <Border Grid.ColumnSpan="3" Grid.Row="0" Grid.Column="0" BorderBrush="Black" BorderThickness="1" Margin="10">
-            <Viewbox>
-                <TextBlock x:Name="MostrarNumerosTextBlock" Tag="MostrarNumeros"></TextBlock>
+            <Viewbox HorizontalAlignment="Right">
+                <TextBlock x:Name="MostrarNumerosTextBlock" TextAlignment="Right"></TextBlock>
             </Viewbox>
         </Border>
         <Button Grid.Column="0" Grid.Row="1" Margin="10,5,5,5" Tag="1" Click="ClickButton">
